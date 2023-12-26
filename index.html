@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <head>
+        <div class="container">
+            <div class="content">
+
+                <div class="heading text-center mb-5">
+                    <h1>Bookmarker</h1>
+                    <div class="animation"></div>
+                </div>
+
+                <div class="form p-4">
+                    <h2 class="text-center fw-bold"><i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i
+                            class="fa-solid fa-bookmark"></i></h2>
+
+                    <div class="in">
+                        <label for="siteName" class="fw-bold"><i class="fa-solid fa-book-bookmark pe-2"></i>Site
+                            Name</label>
+                        <input id="siteName" oninput="validationName();" class="form-control" type="text"
+                            placeholder="Bookmark Name" name="siteName">
+                        <div id="nameAlert" class="alert alert-danger d-none fw-bold">
+                            [A-Z],[a-z],[0-9],_ <br>
+                            Not repeat the name
+                        </div>
+                    </div>
+
+                    <div class="in">
+                        <label for="siteUrl" class="fw-bold"><i class="fa-solid fa-link pe-2"></i>Site URL</label>
+                        <input id="siteUrl" oninput=" validationUrl();" class="form-control" type="url"
+                            placeholder="Website URL" name="siteUrl">
+                        <div id="urlAlert" class="alert alert-danger d-none  fw-bold"> (http or
+                            https)://. The sub-domain and root domain must be between
+                            2 and 256. It should only contain alphanumeric characters and/or special characters.
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button id="btnSubmit" onclick="addItem();" class="btn fw-bold">Submit</button>
+                    </div>
+                </div>
+                
+                <table class="table text-center">
+                    <thead>
+                        <tr>
+                            <th>Index</th>
+                            <th>Website Name</th>
+                            <th>Visit</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </head>
+
+
+    <!-- bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- main js -->
+    <script src="js/index.js"></script>
+</body>
+
+</html>

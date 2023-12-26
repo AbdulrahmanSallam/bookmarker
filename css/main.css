@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+*::selection {
+    background-color: #FEC260;
+}
+
+body {
+    font-family: 'PT Sans Caption', sans-serif;
+    line-height: 1.9rem;
+    background-color: #F7ECDE;
+}
+
+
+
+.heading h1 {
+    font-family: 'Pacifico', cursive;
+    font-weight: 500;
+    font-size: 3.1rem;
+}
+
+.heading {
+    margin: auto;
+    position: relative;
+    width: fit-content;
+    overflow: hidden;
+}
+
+.heading .animation {
+    position: absolute;
+    top: 60%;
+    bottom: 0;
+    z-index: -1;
+    background-color:  #FEC260;
+    width: 100%;
+    height: 100%;
+    transition: top .5s;
+}
+
+.heading:hover .animation{
+    top: 30%;
+}
+
+.container .content {
+    padding-block: 3rem;
+}
+
+.container .content h2 {
+    background: linear-gradient(to right, #3DA55B, #B2AB49);
+    background-clip: text;
+    color: transparent;
+    font-size: 1.6rem;
+
+}
+
+.content .form {
+    margin-block: 1rem;
+    border-block: 2px dotted black;
+}
+
+.content .form .in {
+    margin-block: 1.4rem;
+}
+
+.form button {
+    color: #fff;
+    background-color: #e7532b;
+    width: 150px;
+}
+
+.content .form button:hover {
+    background-color: #BB4120;
+}
+
+button.delete{
+    background-color: #f41e37;
+    color: white;
+}
+
+button.delete:hover{
+    background-color:#D30820;
+    color: white;
+}
+
+a.visit{
+    background-color:#bcda26;
+    color: white;
+}
+
+a.visit:hover{
+    background-color:#8A9E23;
+    color: white;
+}
+
+
+@media screen and (max-width:576px) {
+    html{
+        font-size: 10px;
+    }
+    
+}
+
+
+ 
